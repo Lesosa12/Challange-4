@@ -54,7 +54,7 @@ public class PlayerControllerX : MonoBehaviour
     // If Player collides with enemy
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Player"))
         {
             Rigidbody enemyRigidbody = other.gameObject.GetComponent<Rigidbody>();
             Vector3 awayFromPlayer =  transform.position - other.gameObject.transform.position; 
